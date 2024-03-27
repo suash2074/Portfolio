@@ -4,8 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- <style>
+      .wave::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background-color: lightblue; /* Adjust background color */
+        /* Create wave shape using border-radius */
+        /* clip-path: polygon(0 100%, 100% 100%, 82% 62%, 62% 78%, 41% 62%, 19% 78%, 1% 63%); */
+        /* Optional animation for movement */
+        animation: wave-motion 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes wave-motion {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-10px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style> -->
   </head>
+
   <body>
-    <h1>hi</h1>
+    <nav>
+      <ul>
+        <li class="logo">
+          <h2 class="logo"><span>S</span>u<span>a</span>sh</h2>
+        </li>
+        <li>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Skills</li>
+            <li>Contact</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container home">
+      <div>
+        <p>Myself</p>
+        <div>
+          <h1 class="firstName">
+            Suash <span class="lastName">Rajbhadnari</span>
+          </h1>
+        </div>
+        <p>Frontend Developer</p>
+      </div>
+
+      <section class="wave"></section>
+      <section class="wave2"></section>
+      <section class="wave3"></section>
+      <section class="wav4"></section>
+    </section>
   </body>
 </html>
