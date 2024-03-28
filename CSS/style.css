@@ -27,7 +27,7 @@ nav {
     padding: 0 60px;
     display: flex;
     background-color: black;
-    opacity: 0;
+    display: none;
 }
 
 nav ul {
@@ -63,7 +63,8 @@ nav>ul>li:nth-child(2)>.nav-list>a {
 
 nav>ul>li:nth-child(2)>.nav-list>a::after {
     content: "";
-    width: 0%; /* Initially, width is 0 */
+    width: 0%;
+    /* Initially, width is 0 */
     height: 2px;
     margin-top: 2px;
     position: absolute;
@@ -74,7 +75,54 @@ nav>ul>li:nth-child(2)>.nav-list>a::after {
 }
 
 nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
-    width: 110%; /* Expand to 100% of the container width */
+    width: 110%;
+    /* Expand to 100% of the container width */
 }
 
 /* END OF NAVAGATION */
+
+
+/* NAME CARD STYLE */
+.home {
+    display: flex;
+    justify-content: center;
+    background-color: #dbd8d8;
+    height: 100vh;
+}
+
+.home .container {
+    width: 90%;
+
+}
+
+.container .name-card {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    top: 20%;
+}
+
+.container .name-card .glass-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c9c7c757;
+    filter: blur(2px);
+    border-radius: 15px;
+}
+
+.container .name-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p,
+h1,
+span {
+    color: black;
+
+}
+
+/* END NAME CARD STYLE */
