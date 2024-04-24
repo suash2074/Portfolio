@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -84,7 +87,7 @@ nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
 
 /* NAME CARD STYLE */
 .home {
-    /* position: relative; */
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -92,10 +95,42 @@ nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
     overflow: hidden;
 }
 
+.home .nameBar {
+    position: absolute;
+    color: #06283d;
+    left: 0;
+    width: 30%;
+    height: inherit;
+    background-color: #f0f0f0;
+}
+
+.fullName {
+    position: absolute;
+    left: 20%;
+    transform: rotate(-90deg);
+    bottom: 50%;
+}
+
+.home .imageBar {
+    position: absolute;
+    width: 70%;
+    right: 0;
+    height: inherit;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.images{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* 
 .home .images {
     position: absolute;
     width: 100%;
-    /* top : -50%; */
     overflow: hidden;
     background-repeat: no-repeat;
 }
@@ -118,9 +153,9 @@ nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
     50% {
         transform: translateY(5%);
     }
-}
+} */
 
-.container .name-card .glass-card {
+/* .container .name-card .glass-card {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -130,14 +165,14 @@ nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
+} */
 
-.container .name-card {
+/* .container .name-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 .home .container .name-card p,
 h1,
