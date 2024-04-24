@@ -231,9 +231,7 @@ span {
 
     .firstName,
     .lastName {
-
-        /* bottom: 50%; */
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .firstName {
@@ -246,7 +244,7 @@ span {
 
     .lastName {
         left: 0;
-        top: 26%;
+        top: 23%;
 
     }
 }
