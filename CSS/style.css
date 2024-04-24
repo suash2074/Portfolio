@@ -99,14 +99,13 @@ nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
 .home .nameBar {
     position: absolute;
     left: 0;
-    width: 25%;
+    width: clamp(120px, 25%, 25%);
     height: inherit;
     background-color: #f0f0f0;
     box-shadow: 4px 0 5px #3e3e3e41;
     z-index: 2;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .firstName,
 .lastName {
@@ -147,53 +146,6 @@ nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
     overflow: hidden;
 }
 
-/* 
-.home .images {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    background-repeat: no-repeat;
-}
-
-.home .container {
-    width: 90%;
-
-}
-
-.container .name-card {
-    position: relative;
-    max-width: min(400px, 100vw);
-    top: 20%;
-    transform: translateY(-5%);
-    animation: transform 2s ease-in-out infinite;
-}
-
-@keyframes transform {
-
-    50% {
-        transform: translateY(5%);
-    }
-} */
-
-/* .container .name-card .glass-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.01);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-} */
-
-/* .container .name-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
 .home .container .name-card p,
 h1,
 span {
@@ -221,7 +173,7 @@ span {
 }
 
 .home .wave1 {
-    animation: animate 30s linear infinite 0s;
+    animation: animate 20s linear infinite 0s;
     z-index: 10;
     opacity: 1;
 }
@@ -234,9 +186,9 @@ span {
 }
 
 .home .wave3 {
-    animation: animate 30s linear infinite -2s;
+    animation: animate 25s linear infinite -2s;
     z-index: 8;
-    opacity: 0.2;
+    opacity: 0.3;
     bottom: 15px;
 }
 
@@ -265,5 +217,36 @@ span {
 
     100% {
         background-position-x: -1000px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+    .firstName,
+    .lastName {
+
+        /* bottom: 50%; */
+        font-size: 60px;
+    }
+
+    .firstName {
+
+        left: 1px;
+        top: 58%;
+        bottom: 32%;
+
+    }
+
+    .lastName {
+        left: 0;
+        top: 26%;
+
     }
 }
