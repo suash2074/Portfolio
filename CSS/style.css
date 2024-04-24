@@ -19,6 +19,7 @@
     --buttonColor--: #256d85;
     --waveColor--: #47b5ff;
     --textColor--: #ffffff;
+    --textColorSecondary--: #363636;
 }
 
 
@@ -97,30 +98,49 @@ nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
 
 .home .nameBar {
     position: absolute;
-    color: #06283d;
     left: 0;
-    width: 30%;
+    width: 25%;
     height: inherit;
     background-color: #f0f0f0;
+    box-shadow: 4px 0 5px #3e3e3e41;
+    z-index: 2;
 }
 
-.fullName {
-    position: absolute;
-    left: 20%;
-    transform: rotate(-90deg);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.firstName,
+.lastName {
+    font-family: "Fjalla One", sans-serif;
+    color: var(--textColorSecondary--);
     bottom: 50%;
+    font-size: 60px;
+}
+
+.firstName {
+    position: absolute;
+    left: 18%;
+    transform: rotate(-90deg);
+
+}
+
+.lastName {
+    position: absolute;
+    left: 25%;
+    transform: rotate(-90deg);
+
 }
 
 .home .imageBar {
     position: absolute;
-    width: 70%;
+    width: 75%;
     right: 0;
     height: inherit;
     object-fit: cover;
     background-size: cover;
+    z-index: 1;
 }
 
-.images{
+.images {
     width: 100%;
     height: inherit;
     object-fit: cover;
