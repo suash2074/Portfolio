@@ -22,59 +22,57 @@
     --textColorSecondary--: #363636;
 }
 
+body{
+    background: var(--textColorSecondary--);
+}
 
 /* NAVAGATION STYLE */
 
-nav {
+.nav {
     width: 100%;
     height: 80px;
     padding: 0 60px;
-    background-color: black;
+    background: linear-gradient(to bottom, #363737, #363636);
     position: sticky;
     left: 0;
     top: 0;
-    transition: 2s ease-in-out;
+    /* transition: 2s ease-in-out ; */
     z-index: 100;
+    display: flex;
 }
 
 
 
-nav ul {
+.nav ul {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: 2s ease-in-out;
 }
 
-nav ul li .logo {
+.nav ul li .logo {
     text-transform: uppercase;
     filter: drop-shadow(2px 2px 2px #747171);
-    transition: 2s ease-in-out;
 }
 
-nav ul li .logo span {
+.nav ul li .logo span {
     font-size: 30px;
-    transition: 2s ease-in-out;
 }
 
-nav>ul>li:nth-child(2) {
+.nav>ul>li:nth-child(2) {
     width: 40%;
     justify-content: space-between;
-    transition: 2s ease-in-out;
 }
 
 
-nav>ul>li:nth-child(2)>.nav-list>a {
+.nav>ul>li:nth-child(2)>.nav-list>a {
     /* color: black; */
     cursor: pointer;
     text-decoration: none;
     position: relative;
-    transition: 2s ease-in-out;
-
 }
 
-nav>ul>li:nth-child(2)>.nav-list>a::after {
+.nav>ul>li:nth-child(2)>.nav-list>a::after {
     content: "";
     width: 0%;
     /* Initially, width is 0 */
@@ -87,7 +85,7 @@ nav>ul>li:nth-child(2)>.nav-list>a::after {
     transition: width 300ms ease-in-out;
 }
 
-nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
+.nav>ul>li:nth-child(2)>.nav-list>a:hover::after {
     width: 110%;
     /* Expand to 100% of the container width */
 }
@@ -236,7 +234,7 @@ span {
     width: 100%;
     height: 50vh;
     padding-top: 120px;
-    background: linear-gradient(to bottom, #48B6FF, var(--textColorSecondary--));
+    background: linear-gradient(to bottom, #48B6FF, #373737);
 
 }
 
@@ -247,7 +245,7 @@ span {
     width: 100%;
     height: 100vh;
     padding-top: 120px;
-    background: linear-gradient(to bottom, var(--textColorSecondary--), #000000);
+    background: linear-gradient(to bottom, var(--textColorSecondary--),  #242424);
 
 }
 
