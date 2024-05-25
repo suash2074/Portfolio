@@ -22,7 +22,7 @@
     --textColorSecondary--: #363636;
 }
 
-body{
+body {
     background: var(--textColorSecondary--);
 }
 
@@ -32,13 +32,14 @@ body{
     width: 100%;
     height: 80px;
     padding: 0 60px;
-    background: linear-gradient(to bottom, #363737, #363636);
+    /* background: linear-gradient(to bottom, #363737, #363636); */
     position: sticky;
     left: 0;
     top: 0;
     /* transition: 2s ease-in-out ; */
     z-index: 100;
     display: flex;
+
 }
 
 
@@ -115,27 +116,23 @@ body{
     z-index: 2;
 }
 
+.home .nameBar .rotate {
+    width: 100%;
+    height: 80vh;
+    transform: rotate(-90deg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1;
+}
 
 .firstName,
 .lastName {
     font-family: "Fjalla One", sans-serif;
     color: var(--textColorSecondary--);
     bottom: 50%;
-    font-size: 60px;
-}
-
-.firstName {
-    position: absolute;
-    left: 18%;
-    transform: rotate(-90deg);
-
-}
-
-.lastName {
-    position: absolute;
-    left: 25%;
-    transform: rotate(-90deg);
-
+    font-size: clamp(3rem, 7vw, 4rem); 
 }
 
 .home .imageBar {
@@ -161,10 +158,6 @@ span {
     color: black;
     padding: 10px;
 }
-
-/* p{
-
-} */
 
 /* END NAME CARD STYLE */
 
@@ -245,36 +238,55 @@ span {
     width: 100%;
     height: 100vh;
     padding-top: 120px;
-    background: linear-gradient(to bottom, var(--textColorSecondary--),  #242424);
+    background: linear-gradient(to bottom, var(--textColorSecondary--), #242424);
 
 }
 
 /* ABOUT SECTION ENDS HERE */
 
 
+@media screen and (max-width: 1024px) {
+    .firstName,
+    .lastName {
+        /* font-size: 60px; */
+    }
+}
 
+@media screen and (max-width: 767px) {
 
+    
+
+    /* .home .nameBar .rotate {
+        position: absolute;
+        right: -176px;
+        bottom: 60%;
+    } */
+}
 
 @media screen and (max-width:480px) {
 
 
     .firstName,
     .lastName {
-        font-size: 50px;
+        /* font-size: 50px; */
     }
 
     .firstName {
 
-        left: 1px;
+        /* left: 1px;
         top: 58%;
-        bottom: 32%;
+        bottom: 32%; */
 
     }
 
     .lastName {
-        left: 0;
-        top: 23%;
+        /* left: 0;
+        top: 23%; */
 
+    }
+
+    .nav>ul>li:nth-child(2)>.nav-list>a {
+        display: none;
     }
 
 }
