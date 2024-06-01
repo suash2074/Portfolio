@@ -266,11 +266,12 @@ span {
 
 .profile-article{
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .profile-article .profile-image{
-    width: 50%;
+    width: clamp(24rem, 35rem, 40%);
+    /* width: 35rem; */
     height: 35rem;
     object-fit: cover;
     overflow: hidden;
@@ -278,7 +279,9 @@ span {
 }
 
 .profile-article .profile-decription{
+    width: clamp(15rem, 55rem, 60%);
     /* background: #000; */
+    /* width: 55rem; */
     align-content: center;
     padding: 0 20px;
 
